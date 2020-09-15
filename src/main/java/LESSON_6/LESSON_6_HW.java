@@ -6,6 +6,27 @@ import java.util.Scanner;
 
 public class LESSON_6_HW {
     public static void main(String[] args) {
+
+        Cat cat1 = new Cat("Tank","Brown",2,200,0);
+        Cat cat2 = new Cat("Dori","Red",5,150,0);
+        Cat cat3 = new Cat("Vanilla","White",3,175,0);
+
+        Dog dog1 = new Dog("Rody","Black",7,500,10);
+        Dog dog2 = new Dog("Phil","Brown",10,450,10);
+        Dog dog3 = new Dog("Max","Grey",5,600,12);
+
+        cat1.info();
+        cat2.info();
+        cat3.info();
+
+        dog1.info();
+        dog2.info();
+        dog3.info();
+
+        cat1.run(100);
+        cat2.swim(10);
+        dog1.run(1000);
+        dog2.swim(5);
 //        Cat cat = new Cat("Barsik", "red", 3);
 //        Dog dog = new Dog("Vulkan", "white", 7);
 //        Cow cow = new Cow("Burenka", "brown", 5);
@@ -27,17 +48,17 @@ public class LESSON_6_HW {
 //            ((Dog) cat).scare();
 //        }
 
-        Animal[] animals = { // ссылку на родительский класс можно применять для создания массивов разных объектов
-                new Cat("Barsik", "red", 3),
-                new Dog("Vulkan", "white", 7),
-                new Cow("Burenka", "brown", 5)
-        };
+//        Animal[] animals = { // ссылку на родительский класс можно применять для создания массивов разных объектов
+//                new Cat("Barsik", "red", 3),
+//                new Dog("Vulkan", "white", 7),
+//                new Cow("Burenka", "brown", 5)
+//        };
 
-        for (int i = 0; i < animals.length; i++){
+//        for (int i = 0; i < animals.length; i++){
 //            animals[i].info(); // полиморфизм - вызов общего для наследников метода с индивидуальными параметрами
-            animals[i].voice();
-            System.out.println(animals[i]);
-        }
+//            animals[i].voice();
+//            System.out.println(animals[i]);
+//        }
 //        cat.voice();
 //        dog.voice();
 //        cow.voice();

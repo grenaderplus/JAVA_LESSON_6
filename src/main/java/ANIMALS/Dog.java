@@ -1,8 +1,8 @@
 package ANIMALS;
 
 public class Dog extends Animal {
-    public Dog (String name, String color, int age) {
-        super(name, color, age);
+    public Dog (String name, String color, int age, int maxRunDist, int maxSwimDist) {
+        super(name, color, age, maxRunDist, maxSwimDist);
     }
 
     @Override // у наследника метод с таким же имененм как у родителя - при вызове выполняется метод наследника
